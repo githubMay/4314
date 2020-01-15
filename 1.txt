@@ -5,3 +5,4 @@ increase
 increase
 1234
 322
+git pull origin master --allow-unrelated-histories
