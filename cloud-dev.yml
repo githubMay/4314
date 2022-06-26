@@ -5,7 +5,7 @@ spring:
     driverClassName: org.postgresql.Driver
     url: jdbc:postgresql://118.178.235.216:15432/test_db?useUnicode=true&characterEncoding=utf8
     username: test_user
-    password: ${password}
+    password: ${env.SPRING_DATASOURCE_PASSWORD}
   application:
     name: user-service
 
