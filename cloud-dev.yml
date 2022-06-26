@@ -1,0 +1,25 @@
+server:
+  port: ${port:9091}
+spring:
+  datasource:
+    driverClassName: org.postgresql.Driver
+    url: jdbc:postgresql://118.178.235.216:15432/test_db?useUnicode=true&characterEncoding=utf8
+    username: test_user
+    password: ${password}
+  application:
+    name: user-service
+
+mybatis:
+  type-aliases-package: com.example.model
+  mapper-locations: classpath:mapper/*Mapper.xml
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:10086/eureka
+
+  instance:
+    ip-address: 127.0.0.1
+    prefer-ip-address: true
+    lease-renewal-interval-in-seconds: 90
+    lease-expiration-duration-in-seconds: 30
