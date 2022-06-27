@@ -17,11 +17,9 @@ eureka:
   client:
     service-url:
       defaultZone: http://127.0.0.1:10086/eureka
+
   instance:
     ip-address: 127.0.0.1
     prefer-ip-address: true
     lease-renewal-interval-in-seconds: 90
     lease-expiration-duration-in-seconds: 30
-
-test:
-  name: test-name
